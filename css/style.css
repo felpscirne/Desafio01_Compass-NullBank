@@ -1,15 +1,85 @@
-.header{
-    width: 100%;
-    height: 72px;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap');
+
+header .container{
+    width: Fixed (1,440px)px;
+    height: Hug (72px)px;
     padding: 16px 64px 16px 64px;
     gap: 0px;
     border: 0px 0px 1px 0px;
-    justify: space-between;
-    opacity: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
 }
-.header .logo{
-    width: 100px;
-    height: 24px;	
-    gap: 12px;
-    opacity: 0px;
+
+header .logo{
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    flex-shrink: 0;
+    color:#6729FF;
+    
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    flex-grow:1;
+    justify-content: center;
+}
+
+.menu li{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #94A3B8;
+}
+
+.menu li a:hover{
+    color: #6729FF;
+}
+
+.login{
+    flex-shrink:0;
+
+}
+
+.login a{
+    width: Hug (329px)px;
+    height: Hug (40px)px;
+    gap: 8px;
+    font-family: Poppins;
+    text-decoration: none;   
+}
+
+.login a.sign-up{
+    
+    color: #94A3B8;
+    width: Hug (169px)px;
+    height: Hug (40px)px;
+    padding: 12px 32px 12px 32px;
+    gap: 8px;
+}
+
+.login a.sign-in{
+    background-color: #6729FF;
+    color: #FFFFFF;
+    width: Hug (152px)px;
+    height: Hug (40px)px;
+    padding: 12px 32px 12px 32px;
+    gap: 8px;
+    border-radius: 8px;
+    /* font-size: 16px; */
+
 }
