@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NullBank</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <div class = "container">
-            <a href="index.html" class="logo">NullBank</a>
-            <ul class = "menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="e404.html">Para você</a></li>
-                <li><a href="e404.html">Serviços</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-            <div class = "login">
-                <a href="e404.html" class="sign-up">Cadastre-se</a>
-                <a href="e404.html" class="sign-in">Fazer Login</a>
+    <div id="header-placeholder"></div>
+
+    <div id="screen1" class="screen">
+        <div class="container">
+            <div class="left-side">
+                <h1>Transformando nulos em infinitas possibilidades.</h1>
+                <p>Acreditamos que suas finanças podem ser tão simples quanto você deseja. Conheça nossas soluções inovadoras.</p>
+                <button id="open-Account" class="buttonAccount">Abra sua conta gratuita</button>
+                <a href="e404.html" id="learnMore">Saiba mais</a>
+            </div>
+            <div id="right-side">
+                <img src="/img/app.svg" alt="App" class="app">
             </div>
         </div>
-    </header>
+        <div class="line"></div>
+        <img src="/img/faceIcons.png" alt="faceIcons" class="faceIcons">
+    </div>
+
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
