@@ -1,12 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Oculta o overflow horizontal */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura totais */
+}
+
 .screen .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    gap: 0px;
-    opacity: 0px;
-    flex-direction: row;
     display: flex;
     justify-content: space-between;
-    position:relative;
     background-color: #ffffff00;
 
 }
@@ -15,7 +20,7 @@
     width: 736px;
     height: 698px;
     top: 72px;
-    left: 704px;
+    left: 704px; 
     gap: 0px;
     opacity: 0px;
     position: relative;
@@ -34,7 +39,7 @@
 }
 
 .screen .container .right-side .app{
-    width: 736px;
+    width: 100%;
     height: 698px;
     top: 72px;
     left: 704px;
