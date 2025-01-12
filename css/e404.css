@@ -1,0 +1,32 @@
+.errorScreen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.errorScreen h1{
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 96px;
+    text-align: center;
+    color: #6729FF;
+    margin: 1%;
+}
+
+.errorScreen p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #475569;
+    margin-bottom: 1%;
+}
+
+.errorScreen img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+}

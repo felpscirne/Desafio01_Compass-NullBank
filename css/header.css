@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap');
 
+
+
 header .container{
     width: 100%;
     height: 72px;
@@ -26,39 +28,40 @@ header .logo{
     
 }
 
-.menu{
+nav .menu{
     display: flex;
-    gap: 40px;
+    gap: 80px;
     flex-grow:1;
-    justify-content: center;
+    /* justify-content: ; */
+
 }
 
-.menu li{
+.menu ul{
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li{
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    list-style: none;
+    display: inline;
+    /* justify-content: ; */
 }
 
-.menu li a{
+.menu ul li a{
     text-decoration: none;
     color: #94A3B8;
 }
 
-.menu li a.active{
+.menu ul li a:hover{
     color: #6729FF;
 }
 
-.menu li a:hover{
-    color: #6729FF;
-}
-
-.login{
-    flex-shrink:0;
-
-}
 
 .login a{
     width: Hug (329px)px;
@@ -77,6 +80,7 @@ header .logo{
     gap: 8px;
 }
 
+
 .login a.sign-in{
     background-color: #6729FF;
     color: #FFFFFF;
@@ -85,6 +89,6 @@ header .logo{
     padding: 12px 32px 12px 32px;
     gap: 8px;
     border-radius: 8px;
-    /* font-size: 16px; */
+    font-size: 16px;
 
 }

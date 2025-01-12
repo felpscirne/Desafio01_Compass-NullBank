@@ -1,0 +1,108 @@
+footer {
+    width: 100%;
+    background-color:  #FFFFFF;
+   
+}
+
+footer .fcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+}
+
+footer .fcontainer .column{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+footer .fcontainer .column h3{
+    width: auto;
+    height: 20px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: left;
+    align-items: flex-start;
+    color: #64748B;
+    margin-bottom: 10px;
+
+}
+
+footer .fcontainer .column ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer .fcontainer .column ul li a{
+    text-decoration: none;
+    color: #94A3B8;
+    width: Hug (133px)px;
+    height: Hug (112px)px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+
+.line3{
+    width: 100%;
+    height: 1px;
+    /* top: 3551px; */
+    border: 1px 0px 0px 0px;
+    background-color:#E2E8F0;
+    /* position: absolute; */
+}
+
+.fcontainer2{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.fcontainer2 .social{
+    display: flex;
+}
+
+.fcontainer2 p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #94A3B8;
+}
+.fcontainer2 .footer-links{
+    display: flex;
+    gap: 100px;
+}
+
+.fcontainer2 .footer-links a{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    color: #94A3B8;
+}
+
+.fcontainer2 .logo{
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+    flex-shrink: 0;
+    color:#6729FF;
+    
+}
