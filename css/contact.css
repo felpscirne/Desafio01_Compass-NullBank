@@ -51,21 +51,21 @@ html, body {
     padding-top: 50px;
 }
 
-#contact .container{
-    
-    width: 100%;
-    height: Hug (927px)px;
-    top: 476px;
-    left: 112px;
-    gap: 64px;
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto; 
+    gap: 50px;
+    padding: 150px;
 }
 
 .phone{
-    width: 100%;
+    width: auto;
     height: Fixed (80px)px;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
 }
 
 
@@ -92,8 +92,9 @@ html, body {
 .socialMedia{
     width: 100%;
     height: Fixed (80px)px;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
+    padding-bottom: 50px;
 }
 
 .socialMediaText{
@@ -118,9 +119,112 @@ html, body {
 
 .socialMediaLinks{
     display: flex;
+    gap: 16px;  
+}
+
+.talkWithUs{
+    width: 100%;
+    height: Fixed (80px)px;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.talkWithUsText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+#contact .container .talkWithUsInfo{
+    display:flex;
+    width: 407px;
+    height: 71px;
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
     gap: 16px;
 }
 
+.contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px; 
+    width: 100%;
+}
+
+.contactForm p {
+    margin: 0;
+    padding: 0;
+    align-self: end; 
+}
+
+.contactForm input[type="text"],	
+.contactForm input[type="email"],
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.contactForm input[type="text"] {
+    grid-column: span 2;
+}
+
+
+/* .contactForm label {
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: left;
+    width: 43px;
+    height: 20px;
+    color: #64748B;
+    margin: 0;
+    grid-column: span 1;
+} */
+
+
+.contactForm input[type="email"]{
+    grid-column: span 4;
+}
+
+
+.contactForm textarea {
+    grid-column: span 4;
+    resize: vertical; 
+}
+
+.contactForm button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #6729FF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactForm button:hover {
+    background-color: #5a23d8;
+}
+
+
+.contactForm textarea {
+    grid-column: span 4;
+    resize: vertical; 
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
 
 
@@ -146,13 +250,12 @@ html, body {
 }
 
 
-
-
 #screen2{
     width: 100%;
     height: auto;
     background-color: #ffffff00;
     position: relative;
+    padding-top: 300px;
 }
 
 #screen2 .container{

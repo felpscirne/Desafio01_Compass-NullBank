@@ -1,12 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    if (activeButtonId) {
-        var activeButton = document.getElementById(activeButtonId);
-        if (activeButton) {
-            activeButton.style.color = '#6729FF';
-        }
-    }
+    // Carregar e inserir o header
+    fetch('header.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+            addActiveButtonListeners(); // Adiciona os listeners para atualizar o activeButtonId
+            applyActiveButtonId(); // Aplica o activeButtonId após carregar o header
+        })
+        .catch(error => console.error('Erro ao carregar o header:', error));
 
-    fetch('../footer.html')
+    // Carregar e inserir o footer
+    fetch('footer.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -22,6 +31,26 @@ document.addEventListener('DOMContentLoaded', function() {
     addContactFormValidation();
 });
 
+function applyActiveButtonId() {
+    const activeButtonId = localStorage.getItem('activeButtonId');
+    if (activeButtonId) {
+        const activeButton = document.getElementById(activeButtonId);
+        if (activeButton) {
+            activeButton.style.color = '#6729FF';
+        }
+    }
+}
+
+function addActiveButtonListeners() {
+    const navItems = document.querySelectorAll('header div nav li a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            localStorage.setItem('activeButtonId', item.id); 
+            applyActiveButtonId(); 
+        });
+    });
+}
+
 function addContactFormValidation() {
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -36,6 +65,8 @@ function addContactFormValidation() {
             } else if (!validateEmail(email)) {
                 alert('Por favor, insira um endereço de email válido.');
                 event.preventDefault();
+            } else {
+                localStorage.setItem('contactFormData', JSON.stringify({ name, email, message }));
             }
         });
     }
@@ -53,6 +84,9 @@ function addFooterFormValidation() {
             } else if (!validateEmail(email)) {
                 alert('Por favor, insira um endereço de email válido.');
                 event.preventDefault();
+            } else {
+                // Armazena o email no localStorage
+                localStorage.setItem('newsletterEmail', email);
             }
         });
     }
