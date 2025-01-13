@@ -6,18 +6,26 @@ footer {
 
 footer .fcontainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    padding: 0 20px;
+    padding: 50px 50px;
+    width: Fixed (1,216px)px;
+    height: Hug (156px)px;
+    top: 3311px;
+    left: 112px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 
 footer .fcontainer .column{
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 24px;
     align-items: flex-start;
     text-align: left;
+    padding-bottom: 50px;
 }
 
 footer .fcontainer .column h3{
@@ -39,6 +47,13 @@ footer .fcontainer .column ul{
     padding: 0;
 }
 
+
+.column li{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 footer .fcontainer .column ul li a{
     text-decoration: none;
     color: #94A3B8;
@@ -49,8 +64,87 @@ footer .fcontainer .column ul li a{
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 10px;
+    gap:24px;
 }
 
+
+.fcontainer .columnFinal{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 50px;
+    width: Hug (280px)px;
+    height: Fill (156px)px;
+    padding-right: 80px;
+
+}
+
+.columnFinal h3{
+    width: auto;
+    height: 20px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: left;
+    align-items: flex-start;
+    color: #64748B;
+    margin-bottom: 0px;
+}
+
+.columnFinal p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #94A3B8;
+    margin:0;
+    width: 280px;
+    height: 36px;
+}
+
+.newsletter {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding-right: 80px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: Fill (280px)px;
+    height: Hug (40px)px;
+    padding: 10px;
+    padding-right: 80px;
+}
+
+.newsletter button {
+    position: absolute;
+    right: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6729FF;
+    border-radius: 6px;
+}
+
+.newsletter button img {
+    width: 20px;
+    height: 20px;
+}
+
+.fcontainer .social{
+    display: flex;
+    gap: 30px;
+}
 
 .line3{
     width: 100%;
@@ -70,9 +164,6 @@ footer .fcontainer .column ul li a{
     padding: 0;
 }
 
-.fcontainer2 .social{
-    display: flex;
-}
 
 .fcontainer2 p{
     font-family: Poppins;
@@ -104,5 +195,4 @@ footer .fcontainer .column ul li a{
     text-decoration: none;
     flex-shrink: 0;
     color:#6729FF;
-    
 }

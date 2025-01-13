@@ -5,7 +5,6 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
     box-sizing: border-box;
-    /* background-color: #FFF;  */
 }
 
 .screen{
@@ -448,7 +447,7 @@ html, body {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    
 }
 
 
@@ -551,6 +550,58 @@ html, body {
     position: absolute;
     z-index: 0;
     bottom: 0;
+}
+
+#screen5{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff00;
+    position: relative;
+}
+
+#screen5 .container{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#screen5 .container img{
+    width: 100%;
+    height:100%;
+}
+
+#screen5 .container .ctaText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+.ctaText h1{
+    font-family: Outfit;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 105.6px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.ctaText .buttonAccount{
+    width:182px;
+    height: 40px;
+    padding: 12px 32px 12px 32px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 0px;
+    color: #FFFFFF;
+    background-color: #6729FF;
+    border-color: #00000000;
 
 }
 

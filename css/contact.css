@@ -1,0 +1,202 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+}
+
+
+
+#intro{
+    width: 100%;
+    height: 340px;
+    background-color: #6729FF;
+    padding-bottom: 50px;
+}
+
+#intro h1{
+    font-family: Outfit;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 73.6px;
+    text-align: left;
+    color: #ffffff;
+    width: 944px;
+    height: 148px;
+    padding-top: 136px;
+    padding-left: 112px;
+    margin-top: 0;
+}
+
+#intro p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+    width: 416px;
+    height: 48px;
+    padding-left: 112px;
+    margin-top: 0;
+}
+
+
+#contact{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+
+#contact .container{
+    
+    width: 100%;
+    height: Hug (927px)px;
+    top: 476px;
+    left: 112px;
+    gap: 64px;
+}
+
+.phone{
+    width: 100%;
+    height: Fixed (80px)px;
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 50px;   
+}
+
+
+.phoneText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#contact .container .phoneInfo{
+    display:flex;
+    width: 407px;
+    height: 71px;
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+.socialMedia{
+    width: 100%;
+    height: Fixed (80px)px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.socialMediaText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#contact .container .socialMediaInfo{
+    display:flex;
+    width: 407px;
+    height: 71px;
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+
+.socialMediaLinks{
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+#contact .container h1{
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    text-align: left;
+    color: #475569;
+    margin: 0;
+}
+
+#contact .container p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #94A3B8;
+    margin: 10px;
+    width: 100%;
+}
+
+
+
+
+#screen2{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff00;
+    position: relative;
+}
+
+#screen2 .container{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#screen2 .container img{
+    width: 100%;
+    height:100%;
+}
+
+#screen2 .container .ctaText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+.ctaText h1{
+    font-family: Outfit;
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 105.6px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.ctaText .buttonAccount{
+    width:182px;
+    height: 40px;
+    padding: 12px 32px 12px 32px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 0px;
+    color: #FFFFFF;
+    background-color: #6729FF;
+    border-color: #00000000;
+
+}
